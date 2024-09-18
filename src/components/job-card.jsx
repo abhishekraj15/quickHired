@@ -19,6 +19,7 @@ const JobCard = ({
   savedInit = false,
   onJobSaved = () => {},
 }) => {
+  console.log("🚀 ~ job:", job);
   const [saved, setSaved] = useState(savedInit);
   const {
     fn: fnSavedJob,

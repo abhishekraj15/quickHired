@@ -5,8 +5,8 @@ export async function getJobs(token, { location, company_id, searchQuery }) {
   const supabase = await supabaseClient(token);
   let query = supabase
     .from("jobs")
-    .select("*, company: companies(name,logo_url)");
-  // .select("*, saved: saved_jobs(id), company: companies(name,logo_url)");
+    .select("*,  company: companies(name,logo_url)");
+  // .select("*, company: companies(name,logo_url)");
 
   if (location) {
     query = query.eq("location", location);
@@ -55,4 +55,34 @@ export async function saveJob(token, { alreadySaved }, savedData) {
     }
     return data;
   }
+}
+
+export async function getSingleJob(token, { job_id }) {
+  const supabase = await supabaseClient(token);
+  const { data, error } = await supabase
+    .from("jobs")
+    .select(
+      "*, company: companies(name,logo_url), applications: applications(*)"
+    )
+    .eq("id", job_id)
+    .single();
+  if (error) {
+    console.log("Error Fetching Job", error);
+    return null;
+  }
+  return data;
+}
+
+export async function updateHiringStatus(token, { job_id }, isOpen) {
+  const supabase = await supabaseClient(token);
+  const { data, error } = await supabase
+    .from("jobs")
+    .update({ isOpen })
+    .eq("id", job_id)
+    .select();
+  if (error) {
+    console.log("Error Updating Job", error);
+    return null;
+  }
+  return data;
 }
