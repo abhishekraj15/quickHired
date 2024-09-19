@@ -93,7 +93,7 @@ const JobListing = () => {
           Search
         </Button>
       </form>
-      <div className="flex flex-col sm:flex-row">
+      <div className="flex flex-col sm:flex-row gap-4">
         <Select value={location} onValueChange={(value) => setLocation(value)}>
           <SelectTrigger>
             <SelectValue placeholder="Filter by Location" />

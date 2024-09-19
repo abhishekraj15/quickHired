@@ -27,25 +27,25 @@ const LandingPage = () => {
   return (
     <>
       <main className="flex flex-col gap-10 sm:gap-20 py-10 sm:py-20">
-        <section className="text-center">
-          <h1 className="flex flex-col items-center justify-center gradient-title text-4xl font-extrabold sm:text-6xl lg:text-8xl tracking-tighter py-4">
-            Find Your Dream job{" "}
-            <span className="flex items-center gap-2 sm:gap-6">
+        <section className="text-center px-4 sm:px-6 lg:px-8">
+          <h1 className="flex flex-col items-center justify-center gradient-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tighter py-4 leading-tight">
+            Find Your Dream Job{" "}
+            <span className="flex flex-col md:flex-row items-center gap-2 sm:gap-6">
               and get Quick{" "}
               <img
                 src="/logo.png"
                 alt="HirredLogo"
-                className="h-14 sm:h-24 lg:h-32"
-              ></img>
+                className="h-10 sm:h-14 md:h-18 lg:h-24 xl:h-32"
+              />
             </span>
           </h1>
 
-          <p className="text-gray-300 sm:mt-4 text-xs sm:text-xl">
+          <p className="text-gray-300 mt-2 sm:mt-4 text-sm sm:text-lg md:text-xl">
             Explore thousands of job listings or find the perfect candidate.
           </p>
         </section>
 
-        <div className="flex gap-6 justify-center">
+        <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
           <Link to="/jobs">
             <Button variant="blue" size="xl">
               Find a Job

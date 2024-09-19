@@ -10,6 +10,7 @@ import SaveJob from "./pages/saved-job";
 import MyJobs from "./pages/my-jobs";
 import { ThemeProvider } from "./components/theme-provider";
 import ProtectedRoute from "./components/protected-route";
+import UnderDevelopmentPage from "./components/development";
 
 const router = createBrowserRouter([
   {
@@ -55,7 +56,8 @@ const router = createBrowserRouter([
         path: "/saved-job",
         element: (
           <ProtectedRoute>
-            <SaveJob />
+            <UnderDevelopmentPage />
+            {/* <SaveJob /> */}
           </ProtectedRoute>
         ),
       },
