@@ -42,7 +42,7 @@ const SaveJob = () => {
               );
             })
           ) : (
-            <div>No Saved Job Found 🙂</div>
+            <div>No Saved Job Found 🥲</div>
           )}
         </div>
       )}
