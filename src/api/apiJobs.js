@@ -1,6 +1,5 @@
 import supabaseClient from "@/utils/supabase";
 
-// Fetch Jobs
 export async function getJobs(token, { location, company_id, searchQuery }) {
   const supabase = await supabaseClient(token);
   let query = supabase
