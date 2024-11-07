@@ -79,14 +79,14 @@ const Header = () => {
             >
               <UserButton.MenuItems>
                 <UserButton.Link
+                  href={"/my-jobs"}
                   label="My Jobs"
                   labelIcon={<BriefcaseBusiness size={15} />}
-                  href="/my-jobs"
                 />
                 <UserButton.Link
+                  href={"/saved-jobs"}
                   label="Saved Jobs"
                   labelIcon={<Heart size={15} />}
-                  href="/saved-jobs"
                 />
               </UserButton.MenuItems>
             </UserButton>
@@ -161,7 +161,7 @@ const Header = () => {
           />
         </div>
       )}
-      
+
       {/* Uncomment for SignUp Modal */}
       {/* {showSignUp && (
         <div
