@@ -161,6 +161,7 @@ const Header = () => {
           />
         </div>
       )}
+      
       {/* Uncomment for SignUp Modal */}
       {/* {showSignUp && (
         <div

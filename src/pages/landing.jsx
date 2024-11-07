@@ -27,6 +27,7 @@ const LandingPage = () => {
   return (
     <>
       <main className="flex flex-col gap-10 sm:gap-20 py-10 sm:py-20">
+      
         <section className="text-center px-4 sm:px-6 lg:px-8">
           <h1 className="flex flex-col items-center justify-center gradient-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tighter py-4 leading-tight">
             Find Your Dream Job{" "}
@@ -45,6 +46,7 @@ const LandingPage = () => {
           </p>
         </section>
 
+        {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
           <Link to="/jobs">
             <Button variant="blue" size="xl">
@@ -57,6 +59,7 @@ const LandingPage = () => {
             </Button>
           </Link>
         </div>
+
         {/* Crasuael */}
         <Carousel
           plugins={[
@@ -81,6 +84,7 @@ const LandingPage = () => {
 
         {/* banner */}
         <img src="/banner.jpeg" className="w-full"></img>
+
         {/* Crid Cards */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
@@ -100,6 +104,7 @@ const LandingPage = () => {
             </CardContent>
           </Card>
         </section>
+
         {/* accordiand */}
         <Accordion type="multiple" collapsible>
           {faqs.map((faq, index) => {

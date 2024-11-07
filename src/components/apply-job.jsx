@@ -71,6 +71,7 @@ const ApplyJobDrawer = ({ user, job, applied = false, fetchJob }) => {
       fetchJob(), reset();
     });
   };
+
   return (
     <Drawer open={applied ? false : undefined}>
       <DrawerTrigger asChild>
@@ -82,13 +83,15 @@ const ApplyJobDrawer = ({ user, job, applied = false, fetchJob }) => {
           {job?.isOpen ? (applied ? "Applied" : "Apply") : "Hiring Closed"}
         </Button>
       </DrawerTrigger>
+
       <DrawerContent>
         <DrawerHeader>
           <DrawerTitle>
-            {job?.title} at {job?.campany?.name}
+            {job?.title} at {job?.company?.name}
           </DrawerTitle>
           <DrawerDescription>Please fill the form below.</DrawerDescription>
         </DrawerHeader>
+
         <form
           onSubmit={handleSubmit(onsubmit)}
           className="flex flex-col p-4 pb-0 gap-4"
@@ -149,11 +152,14 @@ const ApplyJobDrawer = ({ user, job, applied = false, fetchJob }) => {
           {errorApply?.message && (
             <p className="text-red-500">{errorApply?.message}</p>
           )}
+
           {loadingApply && <BarLoader width={"100%"} color="#36d7b7" />}
+
           <Button type="submit" variant="blue" size="lg">
             Apply
           </Button>
         </form>
+
         <DrawerFooter>
           <DrawerClose asChild>
             <Button variant="outline">Cancel</Button>

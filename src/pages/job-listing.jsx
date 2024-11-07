@@ -37,6 +37,7 @@ const JobListing = () => {
   const [location, setLocation] = useState("");
   const [company_id, setCompany_id] = useState("");
   const { isLoaded } = useUser();
+
   const {
     fn: fnJobs,
     data: jobs,
@@ -46,12 +47,12 @@ const JobListing = () => {
     company_id,
     searchQuery,
   });
+
   const { fn: fnCompanies, data: companies } = useFetch(getCompanies);
+
   useEffect(() => {
     if (isLoaded) fnCompanies();
   }, [isLoaded]);
-
-  // console.log(jobs);
 
   useEffect(() => {
     if (isLoaded) fnJobs();
@@ -73,6 +74,7 @@ const JobListing = () => {
   if (!isLoaded) {
     return <BarLoader className="mb-4" width={"100%"} color="#36d7b7" />;
   }
+
   return (
     <div>
       <h1 className="gradient-title font-extrabold text-6xl sm:text-7xl text-center pb-8">
@@ -93,7 +95,9 @@ const JobListing = () => {
           Search
         </Button>
       </form>
+
       <div className="flex flex-col sm:flex-row gap-4">
+        {/* State */}
         <Select value={location} onValueChange={(value) => setLocation(value)}>
           <SelectTrigger>
             <SelectValue placeholder="Filter by Location" />
@@ -111,6 +115,7 @@ const JobListing = () => {
           </SelectContent>
         </Select>
 
+        {/* Select By Company */}
         <Select
           value={company_id}
           onValueChange={(value) => setCompany_id(value)}
@@ -131,6 +136,7 @@ const JobListing = () => {
           </SelectContent>
         </Select>
 
+        {/* Clear Filter button */}
         <Button
           variant="destructive"
           className="sm:w-1/2"
@@ -139,9 +145,11 @@ const JobListing = () => {
           Clear Filter
         </Button>
       </div>
+
       {loadingJobs && (
         <BarLoader className="mt-4" width={"100%"} color="#36d7b7" />
       )}
+
       {/* Jobs data */}
       {loadingJobs === false && (
         <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-4">

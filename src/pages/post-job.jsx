@@ -89,6 +89,7 @@ const PostJob = () => {
       <h1 className="gradient-title font-extrabold text-5xl sm:text-7xl text-center pb-8">
         Post a Job
       </h1>
+
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-4 p-4 pb-0"
@@ -108,7 +109,7 @@ const PostJob = () => {
             render={({ field }) => (
               <Select value={field.value} onValueChange={field.onChange}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Job Location" />
+                  <SelectValue placeholder="Filter By Job Location" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>

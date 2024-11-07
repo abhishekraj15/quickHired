@@ -27,6 +27,7 @@ import {
 } from "./ui/select";
 
 const ApplicationCard = ({ application, isCandidate = false }) => {
+
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = application?.resume;
@@ -44,11 +45,13 @@ const ApplicationCard = ({ application, isCandidate = false }) => {
   const handleStatusChange = (status) => {
     fnHiringStatus(status);
   };
+  
   return (
     <>
       <Card>
         {loadingHiringStatus && <BarLoader width={"100%"} color="#36d7b7" />}
         <CardHeader>
+
           <CardTitle className="flex justify-between font-bold">
             {isCandidate
               ? `${application?.job?.title} at ${application?.job?.company?.name}`
@@ -59,7 +62,9 @@ const ApplicationCard = ({ application, isCandidate = false }) => {
               className="bg-white text-black rounded-full h-8 w-8 p-1.5 cursor-pointer"
             />
           </CardTitle>
+
         </CardHeader>
+
         <CardContent className="flex flex-col gap-4 flex-1">
           <div className="flex flex-col md:flex-row justify-between">
             <div className="flex gap-2 items-center">
@@ -77,6 +82,7 @@ const ApplicationCard = ({ application, isCandidate = false }) => {
           </div>
           <hr></hr>
         </CardContent>
+
         <CardFooter className="flex- justify-between">
           <span>{new Date(application?.created_at).toLocaleString()}</span>
           {isCandidate ? (
