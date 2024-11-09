@@ -10,7 +10,14 @@ import {
   UserButton,
   useUser,
 } from "@clerk/clerk-react";
-import { BriefcaseBusiness, Heart, PenBox, Menu, X } from "lucide-react";
+import {
+  BriefcaseBusiness,
+  Heart,
+  PenBox,
+  Menu,
+  X,
+  Briefcase,
+} from "lucide-react";
 
 const Header = () => {
   const [showSignIn, setShowSignIn] = useState(false);
@@ -148,24 +155,24 @@ const Header = () => {
               {user?.unsafeMetadata?.role === "candidate" && (
                 <Link to="/my-jobs">
                   <Button
-                    variant="destructive"
+                    variant="blue"
                     className="w-full mb-4 rounded-full"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    <PenBox size={20} className="mr-2" />
-                    Post a Job
+                    <Briefcase size={20} className="mr-2" />
+                    My Job
                   </Button>
                 </Link>
               )}
               {user?.unsafeMetadata?.role === "candidate" && (
                 <Link to="/saved-jobs">
                   <Button
-                    variant="destructive"
+                    variant="blue"
                     className="w-full mb-4 rounded-full"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    <PenBox size={20} className="mr-2" />
-                    Post a Job
+                    <Heart size={20} className="mr-2" />
+                    My Saved Job
                   </Button>
                 </Link>
               )}
