@@ -30,18 +30,20 @@ const LandingPage = () => {
         <section className="text-center px-4 sm:px-6 lg:px-8">
           <h1 className="flex flex-col items-center justify-center gradient-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tighter py-4 leading-tight">
             Discover Your Dream Job{" "}
-            <span className="flex flex-col md:flex-row items-center gap-2 sm:gap-6">
-              and and get hired with {" "}
-              <img
-                src="/NewLogo.png"
-                alt="HireoLogo"
-                className="h-10 sm:h-14 md:h-18 lg:h-24 xl:h-32"
-              />
+            <span className="flex flex-col md:flex-row items-center gap-2 sm:gap-4">
+              and get hired with{" "}
+              {/* Uncomment the image if you want to include the logo */}
+              {/* <img
+        src="/NewLogo.png"
+        alt="Hireo Logo"
+        className="h-12 sm:h-14 md:h-20 lg:h-24 xl:h-32 md:mt-12"
+      /> */}
+              <h2 className="uppercase gradient-title ">Hireo</h2>
             </span>
           </h1>
 
-          <p className="text-gray-300 mt-2 sm:mt-4 text-sm sm:text-lg md:text-xl">
-            Browse countless job opportunities or discover the ideal candidate.{" "}
+          <p className="text-gray-300 mt-2 sm:mt-4 text-sm sm:text-lg md:text-xl lg:text-2xl">
+            Browse countless job opportunities or discover the ideal candidate.
           </p>
         </section>
 
