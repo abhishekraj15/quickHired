@@ -27,22 +27,21 @@ const LandingPage = () => {
   return (
     <>
       <main className="flex flex-col gap-10 sm:gap-20 py-10 sm:py-20">
-      
         <section className="text-center px-4 sm:px-6 lg:px-8">
           <h1 className="flex flex-col items-center justify-center gradient-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tighter py-4 leading-tight">
-            Find Your Dream Job{" "}
+            Discover Your Dream Job{" "}
             <span className="flex flex-col md:flex-row items-center gap-2 sm:gap-6">
-              and get Quick{" "}
+              and and get hired with {" "}
               <img
-                src="/logo.png"
-                alt="HirredLogo"
+                src="/NewLogo.png"
+                alt="HireoLogo"
                 className="h-10 sm:h-14 md:h-18 lg:h-24 xl:h-32"
               />
             </span>
           </h1>
 
           <p className="text-gray-300 mt-2 sm:mt-4 text-sm sm:text-lg md:text-xl">
-            Explore thousands of job listings or find the perfect candidate.
+            Browse countless job opportunities or discover the ideal candidate.{" "}
           </p>
         </section>
 
@@ -83,24 +82,26 @@ const LandingPage = () => {
         </Carousel>
 
         {/* banner */}
-        <img src="/banner.jpeg" className="w-full"></img>
+        <img src="/Banner.jpg" className="w-full"></img>
 
         {/* Crid Cards */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card>
             <CardHeader>
-              <CardTitle>For Job Seekers</CardTitle>
+              <CardTitle>For Candidates</CardTitle>
             </CardHeader>
             <CardContent>
-              Search and apply jobs, track applications, and more.
+              Explore jobs, submit applications, and monitor your progress
+              effortlessly.
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
-              <CardTitle>For Employers</CardTitle>
+              <CardTitle>For Hiring Managers</CardTitle>
             </CardHeader>
             <CardContent>
-              Post jobs, manage application, and find the best candidates.
+              List opportunities, oversee applications, and find top-notch
+              talent with ease.
             </CardContent>
           </Card>
         </section>

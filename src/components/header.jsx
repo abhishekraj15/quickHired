@@ -37,7 +37,7 @@ const Header = () => {
     <>
       <nav className="py-4 flex justify-between items-center px-4 sm:px-6 lg:px-8">
         <Link>
-          <img src="/logo.png" className="h-12 sm:h-16" alt="Logo" />
+          <img src="/NewLogo.png" className="h-12 sm:h-16" alt="Logo" />
         </Link>
 
         {/* Hamburger Icon for Mobile */}
