@@ -145,6 +145,30 @@ const Header = () => {
                   </Button>
                 </Link>
               )}
+              {user?.unsafeMetadata?.role === "candidate" && (
+                <Link to="/my-jobs">
+                  <Button
+                    variant="destructive"
+                    className="w-full mb-4 rounded-full"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <PenBox size={20} className="mr-2" />
+                    Post a Job
+                  </Button>
+                </Link>
+              )}
+              {user?.unsafeMetadata?.role === "candidate" && (
+                <Link to="/saved-jobs">
+                  <Button
+                    variant="destructive"
+                    className="w-full mb-4 rounded-full"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <PenBox size={20} className="mr-2" />
+                    Post a Job
+                  </Button>
+                </Link>
+              )}
             </SignedIn>
           </div>
         )}
