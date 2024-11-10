@@ -35,7 +35,7 @@ const Header = () => {
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) {
       setShowSignIn(false);
-      setShowSignUp(false);
+      //setShowSignUp(false);
       setSearch({});
     }
   };
@@ -188,8 +188,8 @@ const Header = () => {
           onClick={handleOverlayClick}
         >
           <SignIn
-            signUpForceRedirectUrl="/onboarding"
-            fallbackRedirectUrl="/onboarding"
+            signUpForceRedirectUrl="https://quick-hired.vercel.app/onboarding"
+            fallbackRedirectUrl="https://quick-hired.vercel.app/onboarding"
           />
         </div>
       )}
