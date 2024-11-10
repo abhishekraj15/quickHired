@@ -28,11 +28,12 @@ const AppLayout = () => {
                 href="/"
                 className="text-2xl font-bold uppercase text-gray-100"
               >
-                Hireo
+                {/* Hired */}
+                <img src="logo.png" className=" w-16" />
               </Link>
             </div>
             <p className="mt-4 text-sm">
-              Discover your dream job with Hireo, the leading platform for
+              Discover your dream job with Hired, the leading platform for
               connecting job seekers with top companies. Find your perfect fit
               today!
             </p>
@@ -84,8 +85,8 @@ const AppLayout = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail />
-                <a href="mailto:support@hireo.com" className="hover:text-white">
-                  support@hireo.com
+                <a href="mailto:support@Hired.com" className="hover:text-white">
+                  support@Hired.com
                 </a>
               </li>
               <li className="flex items-center space-x-2">
@@ -133,7 +134,7 @@ const AppLayout = () => {
 
             {/* Copyright */}
             <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} Hireo. All rights reserved.
+              &copy; {new Date().getFullYear()} Hired. All rights reserved.
             </p>
           </div>
         </div>

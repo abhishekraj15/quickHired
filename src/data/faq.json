@@ -1,26 +1,26 @@
 [
-    {
-      "question": "What is Hireo?",
-      "answer": "Hireo is a versatile job portal application that connects companies and job seekers. Employers can post job openings, manage listings, and track applicants, while job seekers can search, apply, and manage their applications effortlessly. With intuitive interfaces and robust security features, Hireo makes the hiring process seamless for everyone involved."
-    },
-    {
-      "question": "How do I post a job?",
-      "answer": "To post a job, simply log in as an employer and go to the 'Post Job' section. Complete the job details form and submit it to create your new job listing."
-    },
-    {
-      "question": "How can I search for jobs?",
-      "answer": "Job seekers can find jobs by entering keywords, location, category, and other filters using the search bar on the homepage or through the dedicated job search page."
-    },
-    {
-      "question": "How do I apply for a job?",
-      "answer": "To apply, simply click on a job listing and follow the application instructions. You may be prompted to upload your resume and fill in any required details."
-    },
-    {
-      "question": "Can I save jobs to apply later?",
-      "answer": "Yes, you can! Simply click the 'Save Job' button on any job listing. You can view all your saved jobs anytime in the 'Saved Jobs' section of your profile."
-    },
-    {
-      "question": "How do I track my job applications?",
-      "answer": "You can monitor the status of your applications in the 'Applications' section of your profile. This section provides real-time updates on the progress of each application."
-    }
-  ]
+  {
+    "question": "What is Hired?",
+    "answer": "Hired is a versatile job portal application that connects companies and job seekers. Employers can post job openings, manage listings, and track applicants, while job seekers can search, apply, and manage their applications effortlessly. With intuitive interfaces and robust security features, Hired makes the hiring process seamless for everyone involved."
+  },
+  {
+    "question": "How do I post a job?",
+    "answer": "To post a job, simply log in as an employer and go to the 'Post Job' section. Complete the job details form and submit it to create your new job listing."
+  },
+  {
+    "question": "How can I search for jobs?",
+    "answer": "Job seekers can find jobs by entering keywords, location, category, and other filters using the search bar on the homepage or through the dedicated job search page."
+  },
+  {
+    "question": "How do I apply for a job?",
+    "answer": "To apply, simply click on a job listing and follow the application instructions. You may be prompted to upload your resume and fill in any required details."
+  },
+  {
+    "question": "Can I save jobs to apply later?",
+    "answer": "Yes, you can! Simply click the 'Save Job' button on any job listing. You can view all your saved jobs anytime in the 'Saved Jobs' section of your profile."
+  },
+  {
+    "question": "How do I track my job applications?",
+    "answer": "You can monitor the status of your applications in the 'Applications' section of your profile. This section provides real-time updates on the progress of each application."
+  }
+]

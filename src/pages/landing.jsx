@@ -35,10 +35,15 @@ const LandingPage = () => {
               {/* Uncomment the image if you want to include the logo */}
               {/* <img
         src="/NewLogo.png"
-        alt="Hireo Logo"
+        alt="Hired Logo"
         className="h-12 sm:h-14 md:h-20 lg:h-24 xl:h-32 md:mt-12"
       /> */}
-              <h2 className="uppercase gradient-title ">Hireo</h2>
+              {/* <h2 className="uppercase gradient-title ">Hired</h2> */}
+              <img
+                src="/logo.png"
+                alt="HirredLogo"
+                className="h-10 sm:h-14 md:h-18 lg:h-24 xl:h-32"
+              />
             </span>
           </h1>
 
@@ -84,7 +89,7 @@ const LandingPage = () => {
         </Carousel>
 
         {/* banner */}
-        <img src="/Banner.jpg" className="w-full"></img>
+        <img src="/banner.jpeg" className="w-full"></img>
 
         {/* Crid Cards */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
