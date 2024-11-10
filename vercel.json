@@ -1,6 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/sso-callback", "destination": "/sso-callback" },
-    { "source": "/(.*)", "destination": "/" }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
